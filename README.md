@@ -1,2 +1,2 @@
 # Ignite
-A Alternative front-end for Instagram
+Alternative front-end for Instagram
