@@ -1,0 +1,15 @@
+@model List<InstagramFeedViewer.Models.InstagramPost>
+
+<h2>Ignite Feed</h2>
+<div class="feed">
+    @foreach (var post in Model)
+    {
+        <div class="post">
+            <a href="@post.Permalink" target="_blank">
+                <img src="@post.MediaUrl" alt="Instagram post" style="max-width: 300px;" />
+            </a>
+            <p>@post.Caption</p>
+            <small>@post.Timestamp.ToShortDateString()</small>
+        </div>
+    }
+</div>
